@@ -1,0 +1,73 @@
+//  Write a program to calculate the area and perimeter of a rectangle.
+import java.util.Scanner;
+public class Rectangle {
+	
+		    public static void main(String[] args) {
+		        
+		        float length, width, area, perimeter;
+
+		        Scanner in = new Scanner(System.in);
+		        // Input length and width of rectangle
+		        System.out.print("Enter length of rectangle: ");
+		        length = in.nextFloat();
+		        
+		        System.out.print("Enter width of rectangle: ");
+		        width  = in.nextFloat();
+
+		        // Calculate perimeter  of rectangle
+		        perimeter = 2 * (length + width);
+
+		        // Calculate area of rectangle 
+		        area = length * width;
+
+		        System.out.println("Perimeter of rectangle is " + perimeter);
+		        System.out.println("Area of rectangle is " + area);
+		    }
+		}
+
+
+// Write a program where you evaluate the result of an arithmetic expressions using unary operators.
+public class UnaryOperator {
+	public static void main(String[] args) {
+
+        int result = +1;
+        // result is now 1
+        System.out.println(result);
+
+        result--;
+        // result is now 0
+        System.out.println(result);
+
+        result++;
+        // result is now 1
+        System.out.println(result);
+
+        result = -result;
+        // result is now -1
+        System.out.println(result);
+
+        boolean success = false;
+        // false
+        System.out.println(success);
+        // true
+        System.out.println(!success);
+    }
+}
+
+
+// Write a program to print the quotient and remainder of two numbers
+public class quocientReminder {
+	public static void main(String[] args) {
+		// 13/3 = Quocient = 4 and Reminder = 1
+		
+		int r = 13;
+		int s = 3;
+		
+		int quocient = r/s;
+		int reminder = r%s;
+		
+		System.out.println(" quocient =" + quocient);
+		System.out.println(" Reminder =" + reminder);
+
+	}
+}
